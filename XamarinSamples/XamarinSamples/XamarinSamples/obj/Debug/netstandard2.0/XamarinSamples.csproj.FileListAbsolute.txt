@@ -1,0 +1,12 @@
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.csprojAssemblyReference.cache
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.AssemblyInfoInputs.cache
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.AssemblyInfo.cs
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.dll
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamarinSamples.pdb
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\bin\Debug\netstandard2.0\XamarinSamples.deps.json
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\bin\Debug\netstandard2.0\XamarinSamples.dll
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\bin\Debug\netstandard2.0\XamarinSamples.pdb
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\obj\Debug\netstandard2.0\XamlC.stamp

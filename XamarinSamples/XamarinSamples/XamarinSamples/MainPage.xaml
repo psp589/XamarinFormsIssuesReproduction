@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinSamples"
+             x:Class="XamarinSamples.MainPage">
+
+    <Grid VerticalOptions="Center"
+          HorizontalOptions="Center">
+        <StackLayout Orientation="Horizontal">
+            <Frame BorderColor="Gray">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Issue #5648" />
+                    <Label Text="ListView item hidden holds space" />
+                    <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5648" />
+                    <ListView WidthRequest="400"
+                              SelectionMode="Single"
+                              HorizontalOptions="Center"
+                              ItemsSource="{Binding ObservableCollectionTest}"
+                              BackgroundColor="Green">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid RowSpacing="0"
+                                          ColumnSpacing="0"
+                                          Padding="0"
+                                          Margin="0"
+                                          HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
+                                          IsVisible="{Binding IsVisible}"
+                                          BackgroundColor="Yellow">
+                                        <Label IsVisible="{Binding IsVisible}"
+                                               Text="{Binding Text}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Frame>
+            <Button BackgroundColor="Gray"
+                    VerticalOptions="Center"
+                    Text="Hide some Items"
+                    Clicked="Button_Clicked" />
+            <Frame BorderColor="Gray">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Issue #5647" />
+                    <Label Text="CollectionView item hidden holds spacee" />
+                    <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5647" />
+
+                    <CollectionView WidthRequest="400"
+                                    SelectionMode="Single"
+                                    HorizontalOptions="Center"
+                                    ItemsSource="{Binding ObservableCollectionTest}"
+                                    BackgroundColor="Green">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid RowSpacing="0"
+                                      ColumnSpacing="0"
+                                      Padding="0"
+                                      Margin="0"
+                                      HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
+                                      IsVisible="{Binding IsVisible}"
+                                      BackgroundColor="Yellow">
+                                    <Label IsVisible="{Binding IsVisible}"
+                                           Text="{Binding Text}" />
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

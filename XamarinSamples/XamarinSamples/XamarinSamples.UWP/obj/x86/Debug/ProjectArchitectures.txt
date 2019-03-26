@@ -1,0 +1,1 @@
+D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\XamarinSamples.UWP.csproj;x86
