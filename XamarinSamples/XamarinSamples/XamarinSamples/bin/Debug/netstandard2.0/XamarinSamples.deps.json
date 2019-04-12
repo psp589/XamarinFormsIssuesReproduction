@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "b98071036144d29caafdf176478f73b465b2daa2"
+    "signature": "6b316386b849cb273c9b907c9c5a17676055429d"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,7 @@
       "XamarinSamples/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Xamarin.Forms": "4.0.0.250467-pre7"
+          "Xamarin.Forms": "4.0.0.304370-pre8"
         },
         "runtime": {
           "XamarinSamples.dll": {}
@@ -22,7 +22,7 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Xamarin.Forms/4.0.0.250467-pre7": {
+      "Xamarin.Forms/4.0.0.304370-pre8": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -60,12 +60,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Xamarin.Forms/4.0.0.250467-pre7": {
+    "Xamarin.Forms/4.0.0.304370-pre8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tKww2K0L1K9ttn32Qdd98b9Z2+H49adTQ8xI34jkPFdPhiZ61a1efgYsuWYRN2vENNzCovhI0CiPBTeEQ2Eong==",
-      "path": "xamarin.forms/4.0.0.250467-pre7",
-      "hashPath": "xamarin.forms.4.0.0.250467-pre7.nupkg.sha512"
+      "sha512": "sha512-jZAIU0HltG7fp9YZZckGjF1kiTwhsgpc2HFpbSO2pKYhW48WfS5kD6w5U0qpZMh7jvQvM/VCvTDBVAJBiJ0r9g==",
+      "path": "xamarin.forms/4.0.0.304370-pre8",
+      "hashPath": "xamarin.forms.4.0.0.304370-pre8.nupkg.sha512"
     }
   }
 }

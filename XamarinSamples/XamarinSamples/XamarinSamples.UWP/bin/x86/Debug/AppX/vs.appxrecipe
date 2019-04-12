@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A865C00D85D571A51C26E4908038C1B2AAA1D082B8567A7B001A1452B84F1BA7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F9B75A780A157CB9AC14A6D41BA824BFE396DE88E19A39573B8ADA842F08144F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>307df333-9591-41dd-9d0c-e4afed3f66aa_1.0.0.0_x86__vqx8s9zjf4rc0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>307df333-9591-41dd-9d0c-e4afed3f66aa_vqx8s9zjf4rc0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>307df333-9591-41dd-9d0c-e4afed3f66aa</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-26T09:09:53.782</Modified>
+      <Modified>2019-04-12T06:54:29.973</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\XamarinSamples.UWP.exe">
       <PackagePath>entrypoint\XamarinSamples.UWP.exe</PackagePath>
-      <Modified>2019-03-26T09:09:50.891</Modified>
+      <Modified>2019-04-12T06:54:29.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -698,25 +698,25 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T01:58:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.250467-pre7\lib\uap10.0\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.304370-pre8\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2019-03-13T22:30:12.000</Modified>
+      <Modified>2019-04-01T18:50:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.250467-pre7\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.304370-pre8\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
-      <Modified>2019-03-13T22:30:12.000</Modified>
+      <Modified>2019-04-01T18:50:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.250467-pre7\lib\uap10.0\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.304370-pre8\lib\uap10.0\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2019-03-13T22:30:12.000</Modified>
+      <Modified>2019-04-01T18:50:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.250467-pre7\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.304370-pre8\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2019-03-13T22:30:12.000</Modified>
+      <Modified>2019-04-01T18:50:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples\bin\Debug\netstandard2.0\XamarinSamples.dll">
       <PackagePath>XamarinSamples.dll</PackagePath>
-      <Modified>2019-03-26T09:09:20.053</Modified>
+      <Modified>2019-04-12T06:54:25.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -863,31 +863,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\XamarinSamples.UWP.xr.xml">
       <PackagePath>XamarinSamples.UWP.xr.xml</PackagePath>
-      <Modified>2019-03-26T09:09:50.698</Modified>
+      <Modified>2019-04-05T11:03:14.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-26T09:09:50.748</Modified>
+      <Modified>2019-04-12T06:54:29.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-26T09:09:50.748</Modified>
+      <Modified>2019-04-12T06:54:29.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T16:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.250467-pre7\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\xamarin.forms\4.0.0.304370-pre8\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
-      <Modified>2019-03-13T22:30:08.000</Modified>
+      <Modified>2019-04-01T18:50:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-03-26T09:09:52.260</Modified>
+      <Modified>2019-04-12T06:48:44.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROYECTOS\XamarinFormsIssues\XamarinSamples\XamarinSamples\XamarinSamples.UWP\bin\x86\Debug\Core\XamarinSamples.UWP.exe">
       <PackagePath>XamarinSamples.UWP.exe</PackagePath>
-      <Modified>2019-03-26T09:09:53.778</Modified>
+      <Modified>2019-04-12T06:54:29.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

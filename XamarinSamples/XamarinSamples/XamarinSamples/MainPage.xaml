@@ -6,69 +6,113 @@
 
     <Grid VerticalOptions="Center"
           HorizontalOptions="Center">
-        <StackLayout Orientation="Horizontal">
-            <Frame BorderColor="Gray">
-                <StackLayout Orientation="Vertical">
-                    <Label Text="Issue #5648" />
-                    <Label Text="ListView item hidden holds space" />
-                    <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5648" />
-                    <ListView WidthRequest="400"
-                              SelectionMode="Single"
-                              HorizontalOptions="Center"
-                              ItemsSource="{Binding ObservableCollectionTest}"
-                              BackgroundColor="Green">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid RowSpacing="0"
-                                          ColumnSpacing="0"
-                                          Padding="0"
-                                          Margin="0"
-                                          HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
-                                          IsVisible="{Binding IsVisible}"
-                                          BackgroundColor="Yellow">
-                                        <Label IsVisible="{Binding IsVisible}"
-                                               Text="{Binding Text}" />
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackLayout>
-            </Frame>
-            <Button BackgroundColor="Gray"
-                    VerticalOptions="Center"
-                    Text="Hide some Items"
-                    Clicked="Button_Clicked" />
-            <Frame BorderColor="Gray">
-                <StackLayout Orientation="Vertical">
-                    <Label Text="Issue #5647" />
-                    <Label Text="CollectionView item hidden holds spacee" />
-                    <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5647" />
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <Frame BorderColor="Gray">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Issue #5648" />
+                        <Label Text="ListView item hidden holds space" />
+                        <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5648" />
+                        <ListView WidthRequest="400"
+                                  SelectionMode="Single"
+                                  HorizontalOptions="Center"
+                                  ItemsSource="{Binding ObservableCollectionTest}"
+                                  ItemTemplate="{StaticResource ListViewTestItemTemplate}"
+                                  BackgroundColor="Green" />
+                    </StackLayout>
+                </Frame>
+                <Button BackgroundColor="Gray"
+                        VerticalOptions="Center"
+                        Text="Hide some Items"
+                        Clicked="Button_Clicked" />
+                <Frame BorderColor="Gray">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Issue #5647" />
+                        <Label Text="CollectionView item hidden holds spacee" />
+                        <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5647" />
 
-                    <CollectionView WidthRequest="400"
-                                    SelectionMode="Single"
-                                    HorizontalOptions="Center"
-                                    ItemsSource="{Binding ObservableCollectionTest}"
-                                    BackgroundColor="Green">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid RowSpacing="0"
-                                      ColumnSpacing="0"
-                                      Padding="0"
-                                      Margin="0"
-                                      HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
-                                      IsVisible="{Binding IsVisible}"
-                                      BackgroundColor="Yellow">
-                                    <Label IsVisible="{Binding IsVisible}"
-                                           Text="{Binding Text}" />
-                                </Grid>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+                        <CollectionView WidthRequest="400"
+                                        SelectionMode="Single"
+                                        HorizontalOptions="Center"
+                                        ItemsSource="{Binding ObservableCollectionTest}"
+                                        ItemTemplate="{StaticResource TestItemTemplate}"
+                                        BackgroundColor="Green" />
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Gray">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Issue #5625" />
+                        <Label Text="CollectionView SelectionMode SelectionMode='Multiple' Not working" />
+                        <Label Text="https://github.com/xamarin/Xamarin.Forms/issues/5625" />
+                        <StackLayout Orientation="Horizontal">
+                            <CollectionView WidthRequest="400"
+                                            SelectionMode="Multiple"
+                                            SelectedItems="{Binding SelectedItems, Mode=TwoWay}"
+                                            HorizontalOptions="Center"
+                                            ItemsSource="{Binding ObservableCollectionTestMultiple}"
+                                            BackgroundColor="Green">
+                                <CollectionView.ItemsLayout>
+                                    <GridItemsLayout Orientation="Vertical" />
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Label Text="{Binding}" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="SelectedItems" />
+                                <ListView ItemsSource="{Binding SelectedItems}"
+                                          WidthRequest="400"
+                                          BackgroundColor="Green"
+                                          HorizontalOptions="Center">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Label Text="{Binding}" />
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>    
+                                </ListView>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </Grid>
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="TestItemTemplate">
+                <Grid RowSpacing="0"
+                      ColumnSpacing="0"
+                      Padding="0"
+                      Margin="0"
+                      HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
+                      IsVisible="{Binding IsVisible}"
+                      BackgroundColor="Yellow">
+                    <Label IsVisible="{Binding IsVisible}"
+                           Text="{Binding Text}" />
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="ListViewTestItemTemplate">
+                <ViewCell>
+                    <Grid RowSpacing="0"
+                          ColumnSpacing="0"
+                          Padding="0"
+                          Margin="0"
+                          HeightRequest="{Binding IsVisible,Converter={StaticResource BoolToHeight},Mode=OneWay, ConverterParameter=-1}"
+                          IsVisible="{Binding IsVisible}"
+                          BackgroundColor="Yellow">
+                        <Label IsVisible="{Binding IsVisible}"
+                               Text="{Binding Text}" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 </ContentPage>

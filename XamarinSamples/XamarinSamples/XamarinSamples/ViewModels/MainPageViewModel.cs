@@ -9,6 +9,11 @@ namespace XamarinSamples.ViewModels
 {
     public class MainPageViewModel : INotifyPropertyChanged
     {
+        public MainPageViewModel()
+        {
+            //SelectedItems = new ObservableCollection<Item>();
+            //SelectedItems.Add(ObservableCollectionTest[0]);
+        }
         public class Item : INotifyPropertyChanged
         {
             private bool _isVisible;
@@ -39,6 +44,7 @@ namespace XamarinSamples.ViewModels
             }
             public event PropertyChangedEventHandler PropertyChanged;
         }
+        public event PropertyChangedEventHandler PropertyChanged;
         public static string ObservableCollectionTestPropertyName() { return nameof(ObservableCollectionTest); }
         private ObservableCollection<Item> _ObservableCollectionTest = new ObservableCollection<Item>(new List<Item>()
         {
@@ -82,9 +88,6 @@ namespace XamarinSamples.ViewModels
             , new Item("test 39")
             , new Item("test 40")
         });
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public ObservableCollection<Item> ObservableCollectionTest
         {
             get
@@ -94,6 +97,40 @@ namespace XamarinSamples.ViewModels
             set
             {
                 _ObservableCollectionTest = value;
+                RaisePropertyChanged();
+            }
+        }
+        public static string ObservableCollectionTestMultiplePropertyName() { return nameof(ObservableCollectionTestMultiple); }
+        private ObservableCollection<string> _ObservableCollectionTestMultiple = new ObservableCollection<string>(new List<string>()
+        {
+            "test 1"
+            , "test 2"
+            , "test 3"
+            , "test 4"
+            ,"test 5"
+        });
+        public ObservableCollection<string> ObservableCollectionTestMultiple
+        {
+            get
+            {
+                return _ObservableCollectionTestMultiple;
+            }
+            set
+            {
+                _ObservableCollectionTestMultiple = value;
+                RaisePropertyChanged();
+            }
+        }
+        private ObservableCollection<string> _SelectedItems;
+        public ObservableCollection<string> SelectedItems
+        {
+            get
+            {
+                return _SelectedItems;
+            }
+            set
+            {
+                _SelectedItems = value;
                 RaisePropertyChanged();
             }
         }
